@@ -1,4 +1,10 @@
 # Hardware PWM
+Hardware PWM is much simpler to implement than software PWM. Each board has a set number of PWM pins that will automatically
+output a PWM signal (based on chosen parameters). At this point, we make use of them.
+
+## How it is implemented
+In order to implement Hardware PWM, we must first check the datasheet, to find out which pins can output a PWM signal.
+Once we have this information, we can use that pins associated timer module to generate our desired wave. 
 Now that you have done the software version of PWM, now it is time to start leveraging the other features of these Timer Modules.
 
 ## Task

@@ -1,15 +1,19 @@
 # Software Debouncing
-In previously labs, we talked about how objects such as switches can cause some nasty effects since they are actually a mechanical system at heart. We talked about the simple hardware method of debouncing, but due to the many different design constraints, you may not be able to add or adjust hardware. Debouncing is also only one of many applications which would require the use of built in Timers to allow for other processes to take place.
+Button debouncing is tackled in this lab. Specifically, we look at software debouncing. It is possible to debounce a button
+using hardware, such as capacitors, but that can sometimes be seen as inadvisable, as you would need to slap in 
+capacitors to a structure that may be all finished and ready for mass fabrication. As a result, we can use timer modules 
+to debounce a button, by essentially simulating a capacitor.
 
-## Task
-You need to utilize the TIMER modules within the MSP430 processors to implement a debounced switch to control the state of an LED. You most likely will want to hook up your buttons on the development boards to an oscilloscope to see how much time it takes for the buttons to settle. The idea here is that your processor should be able to run other code, while relying on timers and interrupts to manage the debouncing in the background. You should not be using polling techniques for this assignment. Your code should also be able to detect 
+##How it works
+When we use a button, it does not immediately jump to high once we press it. Instead, there could be many different
+oscillations, as the button is pressed and depressed multiple times before finally stabilising. This is due to the fact
+that buttons are a mechanical object. They are not perfect. The basic idea behind debouncing a button is to eliminate
+all of the oscillation that is present. In hardware, we would use a capacitor, as it would act as a filter, to filter out
+the noise caused by the oscillation of the button. In software, we use the built in timer modules. Essentially, we 
+let the button be activated. Then, we disable the button to rpevent it from being activated again for the near future.
+We then re enable the button once our timer is up (once the button has stabilised).
 
-### Hints
-You need to take a look at how the P1IE and P1IES registers work and how to control them within an interrupt routine. Remember that the debouncing is not going to be the main process you are going to run by the end of the lab.
+##Implementing
+Implementing this code is simple. You simply take the main.c file that you want to work with, put it into your project 
+folder, making sure that the appropriate processor is linked, and run it.
 
-## Extra Work
-### Low Power Modes
-Go into the datasheets or look online for information about the low power modes of your processors and using Energy Trace, see what the lowest power consumption you can achieve while still running your debouncing code. Take a note when your processor is not driving the LED (or unplug the header connecting the LED and check) but running the interrupt routine for your debouncing.
-
-### Double the fun
-Can you expand your code to debounce two switches? Do you have to use two Timer peripherals to do this?
