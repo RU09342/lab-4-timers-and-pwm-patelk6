@@ -16,7 +16,7 @@ concerning the energy and power usage.
 
 SMClk runs at 1MHz. We can see that we use about 5.73 to 6.09 mW of power any given time.
 
-![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_A.png "Power of SMClk")
+![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_A.PNG "Power of SMClk")
 
 AClk runs at 32 kHz. As we can see from the preceeding image, we use about 2.4 to 11.4 mW of power at any given time.
 
@@ -30,11 +30,11 @@ of lower minimum power draws.
 Next, we examine the use of predividers. In this instance, we examine the power draw of SMClk with and without a predivider.
 Power draw of SMClk without any predivider.
 
-![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM.png "Power of SMClk")
+![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM.PNG "Power of SMClk")
 
 Power draw of SMClk with an 8 predivider.
 
-![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM_8.png "Power of SMClk with 8 divider")
+![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM_8.PNG "Power of SMClk with 8 divider")
 
 We see a similar trend between regular SMClk and SMClk with 8 divider that we saw previously with SMClk vs AClk.
 Using the 8 divider, we get a larger spread in the power draw when using the 8 divider. Another worthy observation
@@ -47,7 +47,7 @@ power draw from a 50% duty cycle of SMClk, and a 100% duty of SMClk.
 
 ![alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM.PNG "Power of SMClk")
 
-![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM_100p.png "Power of SMClk")
+![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM_100p.PNG "Power of SMClk")
 
 As can be seen in the images, duty cycle almost has a linear effect on the power draw. When the duty cycle is doubled,
 the power is nearly doubled as well. This is perhaps the one result that came out as expected, as with a higher duty cycle,
