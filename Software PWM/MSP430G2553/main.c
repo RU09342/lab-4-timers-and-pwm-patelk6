@@ -5,7 +5,7 @@ int main(void)
 
   WDTCTL = WDTPW + WDTHOLD;                 // Stop watchdog timer
 
-  P1DIR |= (BIT6);           // Set P1.0 to output direction
+  P1DIR |= (BIT6);           // Set P1.6 to output direction
   P1SEL |= BIT6;
 
   P1REN |= BIT3;                   // Enable internal pull-up/down resistors
