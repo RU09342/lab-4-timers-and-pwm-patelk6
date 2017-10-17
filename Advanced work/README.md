@@ -45,7 +45,7 @@ to divide the clock signal, rather than to just let it run without.
 Finally, we examine the different power draws of various duty cycles. In this instance, we compare the 
 power draw from a 50% duty cycle of SMClk, and a 100% duty of SMClk.
 
-![Alt text](/pictures/power_SM.png?raw=true "Power of SMClk")
+![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/tree/master/Advanced%20work/pictures?raw=true "Power of SMClk")
 
 ![Alt text](/pictures/power_SM_100p.png?raw=true "Power of SMClk")
 
