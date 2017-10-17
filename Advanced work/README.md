@@ -30,11 +30,11 @@ of lower minimum power draws.
 Next, we examine the use of predividers. In this instance, we examine the power draw of SMClk with and without a predivider.
 Power draw of SMClk without any predivider.
 
-![Alt text](pictures/power_SM.png?raw=true "Power of SMClk")
+![Alt text](Advanced%20work/pictures/power_SM.png?raw=true "Power of SMClk")
 
 Power draw of SMClk with an 8 predivider.
 
-![Alt text](pictures/power_SM_8.png "Power of SMClk with 8 divider")
+![Alt text](Advanced%20work/pictures/power_SM_8.png "Power of SMClk with 8 divider")
 
 We see a similar trend between regular SMClk and SMClk with 8 divider that we saw previously with SMClk vs AClk.
 Using the 8 divider, we get a larger spread in the power draw when using the 8 divider. Another worthy observation
