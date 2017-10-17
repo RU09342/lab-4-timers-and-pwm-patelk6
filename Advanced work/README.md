@@ -12,7 +12,7 @@ and different duty cycles.
 First, the effect of using different clock speeds is examined. The following two images are captured
 concerning the energy and power usage.
 
-![Alt text](/pictures/power_SM.png?raw=true "Power of SMClk")
+![Alt text](https://github.com/RU09342/lab-4-timers-and-pwm-patelk6/blob/master/Advanced%20work/pictures/power_SM.PNG "Power of SMClk")
 
 SMClk runs at 1MHz. We can see that we use about 5.73 to 6.09 mW of power any given time.
 
