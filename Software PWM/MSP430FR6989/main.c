@@ -9,17 +9,17 @@ int main(void)
        P1OUT &= ~BIT0;                         // Clear P1.0 output latch for a defined power-on state
        P1DIR |= BIT0;                          // Set P1.0 to output direction
 
-       //choosing pin 2.0 for hardware pwm
+       //choosing pin 3.3 for hardware pwm
        P3SEL1 |= BIT3;
        P3DIR|= BIT3;
-
+	   //Setting up timers
        TA1CCTL1 += OUTMOD_7;
        TA1CTL = TASSEL_2 + MC_1;
        TA1CCR0 = 1000;
        TA1CCR1 = 500;
 
 
-
+       //Setting up button
        P1DIR &= ~BIT1;
        P1OUT |= BIT1;
        P1REN |= BIT1;
@@ -30,7 +30,7 @@ int main(void)
 
 
       __enable_interrupt();
-     //  __no_operation();
+     
        while(1){
 
        }

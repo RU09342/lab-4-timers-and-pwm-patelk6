@@ -23,14 +23,6 @@ int main(void)
        P1OUT |= BIT1;
        P1REN |= BIT1;
 
-    //   TA0CCTL0 = CCIE;                          // CCR0 interrupt enabled
-     //  TA0CCR0 = 62500;
-     //  TA0CTL = TASSEL_1 + MC_1 + ID_3;         // SMCLK, upmode, clear TAR
-
-
-
-    //   __bis_SR_register(LPM0_bits + GIE);
-     //  __no_operation();
        while(1){
 
        }

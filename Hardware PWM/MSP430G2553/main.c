@@ -13,7 +13,7 @@ int main(void)
     P1IE |= BIT3;                       // P1.3 interrupt enabled
     P1IES |= BIT3;                     // P1.3 Hi/lo edge
     P1IFG &= ~BIT3;
-
+	//set up timer
   TA0CCTL1 |= OUTMOD_7;
   TA0CCR0 |= 1000;
   TA0CCR1 |= 500;

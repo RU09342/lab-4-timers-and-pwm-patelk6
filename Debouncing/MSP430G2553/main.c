@@ -41,7 +41,7 @@ __interrupt void Port_1(void)
 
 
 
-  //  __bic_SR_register_on_exit(LPM0_bits);
+
 
 
      // P1.3 IFG cleared
@@ -59,7 +59,7 @@ __interrupt void Timer_A(void)
     P1IE |= BIT3;
     P1OUT |= BIT3;
 
- //   __bic_SR_register_on_exit(LPM0_bits);
+
 }
 
 
